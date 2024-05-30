@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "esModuleInterop": true,
+    "outDir": ".dist",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node"],
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+}
