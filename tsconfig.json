@@ -1,14 +1,21 @@
 {
   "compilerOptions": {
-    "lib": ["esnext"],
+    "target": "esnext",
+    "module": "commonjs",
     "esModuleInterop": true,
     "outDir": ".dist",
-    "module": "CommonJS",
+    "strict": true,
     "moduleResolution": "node",
-    "target": "esnext",
-    "typeRoots": ["./node_modules/@types"],
-    "types": ["node"],
-    "resolveJsonModule": true
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "declaration": false,
+    "typeRoots": ["./node_modules/@types"]
   },
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules",
+    ".vercel",
+    ".dist"
+  ]
 }
